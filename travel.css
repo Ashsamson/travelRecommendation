@@ -1,76 +1,86 @@
-body {
+
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+  }
+  
+  body {
     font-family: Arial, sans-serif;
     color: white;
     text-align: center;
-    }
-    
-    nav {
+  }
+  
+  /* Navigation Styles */
+  
+  nav {
     background-color: #0a458aad;
     color: white;
     padding: 1rem;
     border-radius: 0px;
     margin: 0;
-    max-width:100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    }
-    
-    .logo {
+  }
+  
+  .logo {
     display: flex;
     align-items: center;
-    }
-    
-    .logo img {
+  }
+  
+  .logo img {
     height: 50px;
     margin-right: 10px;
     border-radius: 70%;
-    }
-    
-    nav ul {
+  }
+  
+  nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    }
-    
-    nav ul li {
+  }
+  
+  nav ul li {
     margin: 0 10px;
-    }
-    
-    nav ul li a {
+  }
+  
+  nav ul li a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s;
-    }
-    
-    nav ul li a:hover {
+  }
+  
+  nav ul li a:hover {
     background-color: #575757;
-    }
-    
-    .search-container {
+  }
+  
+  /* Search Styles */
+  
+  .search-container {
     display: flex;
     align-items: center;
     background-color: white;
     border-radius: 20px;
     overflow: hidden;
     border: 1px solid #ccc;
-    }
-    
-    #conditionInput {
+  }
+  
+  #conditionInput {
     padding: 10px;
     border: none;
     flex: 1;
     outline: none;
     border-radius: 0;
-    }
-    
-    #btnSearch, #btnReset {
+  }
+  
+  #btnSearch, #btnReset {
     background-color: #007bff;
     color: white;
     border: none;
@@ -78,40 +88,23 @@ body {
     cursor: pointer;
     outline: none;
     transition: background-color 0.3s;
-    }
-    
-    #btnSearch:hover, #btnReset:hover {
+  }
+  
+  #btnSearch:hover, #btnReset:hover {
     background-color: #0056b3;
-    }
-    
-    #btnSearch {
+  }
+  
+  #btnSearch {
     border-left: 1px solid #ccc;
-    }
-    
-    #btnReset {
+  }
+  
+  #btnReset {
     border-left: 1px solid #ccc;
-    }
-
-    #search-result{
-        margin-top: 20px;
-    }
-
-    #search-results div {
-        background-color: #f3f5f7;
-        padding: 20px;
-        margin-bottom: 10px;
-        border:1px solid #ddd;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    #search-result img {
-        width: 50%;
-        height: 100px;
-        object-fit: cover;
-        border-radius: 10px 10px 0 0;
-    }
-    
-    .home1 {
+  }
+  
+  /* Home Styles */
+  
+  .home1 {
     background-image: url('./background2.jpg');
     background-size: cover;
     background-position: center;
@@ -121,151 +114,94 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
-    }
-    .home {
-        background-image: url('./background2.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 90vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-    }
-    
-    .home1 h1 {
+  }
+  
+  .home1 h1 {
     font-size: 3rem;
     color: #312e2e;
     justify-content: center;
     text-align: left;
     margin: 0;
-    }
-    
-    .home1 p {
+  }
+  
+  .home1 p {
     font-size: 1.5rem;
     color: rgb(153, 0, 255);
     text-align: left;
     margin: 10px 0 30px;
     max-width: 600px;
-    text-wrap:initial;
-    }
-    .home1 button{
-        background-color: #007bff;
-        color: white;
-        align-items: baseline ;
-        padding: 10px;
-        cursor: pointer;
-        outline: none;
-        transition: background-color 0.3s;   
-    }
-    .container-us{
-        background-size: cover;
-        background-position: center;
-        height: 90vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 20px;
-    }
-    
-    .social-icons {
-        position: relative;
-        align-items: first baseline;
-        left: 1600px;
-    }
-    
-    
-    .social-icons a {
-    text-decoration: none;
-    color: rgba(247, 194, 23, 0.863);
-    font-size: 2rem;
-    font-weight: 500;
-    font-style: italic;
-    
-    transition: transform 0.3s, color 0.3s;
-    }
-    
-    .social-icons a:hover {
-    transform: scale(1.2);
-    color: #f3f5f7;
-    }
-  /* contact style */
-    .contact-form-container {
-        background-color: #1f80c0b0;
-        color: white;
-        padding: 20px;
-        border-radius: 10px;
-        width: 80%;
-        margin-left:10%;
-        }
-        
-    .contact-form-container h1 {
-        text-align: center;
-        }
-        
-    .contact-form-container form {
-        display: flex;
-        flex-direction: column;
-        align-items:normal;
-        }
-        
-    .contact-form-container label {
-        margin-bottom: 10px;
-        align-items:self-start;
-        }
-        
-    .contact-form-container input, .contact-form-container textarea {
-        padding: 10px;
-        margin-bottom: 20px;
-        border: none;
-        border-radius: 15px;
-        }
-        
-        .contact-form-container button {
-        background-color: #007bff;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        }
-
-        /* home style */
-        .home2 p {
-            font-size: 2rem;
-            color: #2407cad7;
-            text-align: left;
-            margin: 10px 30px;
-            max-width: 600px;
-            text-wrap:inherit;
-        }
-        .home2 button{
-                background-color: #007bff;
-                font-size: large;
-                color: rgb(246, 247, 244);
-                align-items: baseline ;
-                padding: 20px;
-                cursor: pointer;
-                outline: none;
-                transition: background-color 0.3s;
-        } 
-        .home2 {
-            background-image: url('./background2.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 90vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items:flex-start;
-            padding: 20px;
-         }
-         .home2 h1 {
-            color: #312e2e;
-            font-size: 4rem;
-            justify-content:left;
-            text-align: left;
-            margin: 10px;
-            }
+    text-wrap: initial;
+  }
+  
+  .home1 button {
+    background-color: #007bff;
+    color: white;
+    align-items: baseline;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+  }
+  
+  /* Contact Styles */
+  
+  .contact-form-container {
+    background-color: #1f80c0b0;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 10%;
+  }
+  
+  .contact-form-container h1 {
+    text-align: center;
+  }
+  
+  .contact-form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+  }
+  
+  .contact-form-container label {
+    margin-bottom: 10px;
+    align-items: self-start;
+  }
+  
+  .contact-form-container input, .contact-form-container textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 15px;
+  }
+  
+  .contact-form-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Search Results Styles */
+  
+  #search-result {
+    margin-top: 20px;
+  }
+  
+  #search-results div {
+    background-color: #f3f5f7;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #search-result img {
+    width: 50%;
+    height: 100px;
+    object-fit: cover;
+  
