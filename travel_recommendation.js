@@ -57,6 +57,15 @@
 //     return results;
 //   }
   
+const searchButton = document.getElementById('search-button');
+if (searchButton) {
+  searchButton.addEventListener('click', () => {
+    // code here
+  });
+} else {
+  console.error('Search button element not found');
+}
+
   
   
 // Get the search input and button elements
@@ -68,7 +77,7 @@ const searchResults = document.getElementById('search-results');
 searchButton.addEventListener('click', () => {
   const keyword = searchInput.value.trim().toLowerCase();
   if (keyword !== '') {
-    fetch('./travel_recommendation_api.json')
+    fetch('travel_recommendation_api.json')
       .then(response => response.json())
       .then(data => {
         const filteredData = data.filter(item => {
