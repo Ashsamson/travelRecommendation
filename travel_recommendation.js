@@ -57,7 +57,7 @@
 //     return results;
 //   }
   
-const searchButton = document.getElementById('search-button');
+let searchButton = document.getElementById('search-button');
 if (searchButton) {
   searchButton.addEventListener('click', () => {
     // code here
@@ -70,7 +70,7 @@ if (searchButton) {
   
 // Get the search input and button elements
 const searchInput = document.getElementById('conditionInput');
-const searchButton = document.getElementById('btnSearch');
+let searchButton = document.getElementById('btnSearch');
 const searchResults = document.getElementById('search-results');
 
 // Add event listener to the search button
